@@ -7,38 +7,53 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="container">
+    <div class="inputs">
+      <div class="bill">
+        <h2>Bill</h2>
+        <input type="text" placeholder="0">
+      </div>
 
-  Bill
+      <div class="tip-amounts">
+        <h2>Select Tip %</h2>
+      <button>5%</button>
+      <button>10%</button>
+      <button>15%</button>
+      <button>25%</button>
+      <button>50%</button>
+      <button>Custom</button>
+      </div>
+    
+      <div class="people">
+        <h2>Number of People</h2>
+        <input type="text" name="" placeholder="0">
+      </div>
+    </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <div class="results">
+      <div class="tip_amount_result">
+        <h2>
+          Tip Amount
+        / person
+        </h2>
+        <div class="tip_amount_output"></div>
+      </div>
 
-  Number of People
+      <div>
+      </div>
+      <div class="people_results">
+         <h2>
+          Total
+          / person
+         </h2>
+         <div class="people_amount_result"></div>
+      </div>
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <button>Reset</button>
+    </div>
+    
+  </main>
 </body>
 </html>
