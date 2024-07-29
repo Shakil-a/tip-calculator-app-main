@@ -7,28 +7,29 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <main class="container">
     <div class="inputs">
       <div class="bill">
         <h2>Bill</h2>
-        <input type="text" placeholder="0">
+        <input type="text" placeholder="0" id="bill">
       </div>
 
       <div class="tip-amounts">
         <h2>Select Tip %</h2>
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
-      <button>Custom</button>
+      <button data-amount="5" class="set-tip">5%</button>
+      <button data-amount="10" class="set-tip">10%</button>
+      <button data-amount="15" class="set-tip">15%</button>
+      <button data-amount="25" class="set-tip">25%</button>
+      <button data-amount="50" class="set-tip">50%</button>
+      <input type="text" placeholder="Custom" id="custom-tip">
       </div>
     
       <div class="people">
         <h2>Number of People</h2>
-        <input type="text" name="" placeholder="0">
+        <input type="text" name="" placeholder="0" id="numOfPeople">
       </div>
     </div>
 
@@ -38,7 +39,7 @@
           Tip Amount
         / person
         </h2>
-        <div class="tip_amount_output"></div>
+        <div class="tipPerPerson"></div>
       </div>
 
       <div>
@@ -48,7 +49,7 @@
           Total
           / person
          </h2>
-         <div class="people_amount_result"></div>
+         <div class="totalAmountOutput"></div>
       </div>
 
       <button>Reset</button>
