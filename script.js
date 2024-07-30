@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const setTips = document.querySelectorAll('.set-tip');
     const customTip = document.querySelector('#custom-tip');
-    const totalAmountOutput = document.querySelector('.totalAmountOutput')
+    const totalAmountOutput = document.querySelector('.totalAmountOutput');
     const numOfPeople = document.querySelector('#numOfPeople');
-    const tipPerPerson = document.querySelector('.tipPerPerson')
+    const tipPerPerson = document.querySelector('.tipPerPerson');
+    const resetBtn = document.querySelector('#resetBtn');
     let totaltip = 0;
 
         setTips.forEach(button => {
@@ -28,5 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const peopleCount = parseInt(numOfPeople.value) || 1;
             tipPerPerson.innerHTML = (totaltip / peopleCount);
         });
+
+        resetBtn.addEventListener('click', () => {
+            totalAmountOutput.innerHTML = '';
+            tipPerPerson.innerHTML = '';
+            document.querySelector('#bill').value = '';
+            numOfPeople.value = '';
+            customTip.value = '';
+
+
+        })
 
 })
