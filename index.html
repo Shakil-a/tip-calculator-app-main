@@ -7,52 +7,61 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <main class="container">
-    <div class="inputs">
-      <div class="bill">
-        <h2>Bill</h2>
-        <input type="text" placeholder="0" id="bill">
-      </div>
-
-      <div class="tip-amounts">
-        <h2>Select Tip %</h2>
-      <button data-amount="5" class="set-tip">5%</button>
-      <button data-amount="10" class="set-tip">10%</button>
-      <button data-amount="15" class="set-tip">15%</button>
-      <button data-amount="25" class="set-tip">25%</button>
-      <button data-amount="50" class="set-tip">50%</button>
-      <input type="text" placeholder="Custom" id="custom-tip">
-      </div>
-    
-      <div class="people">
-        <h2>Number of People</h2>
-        <input type="text" name="" placeholder="0" id="numOfPeople">
-      </div>
+  <main>
+    <div class="logo-container">
+      <img src="./images/logo.svg" alt="">
     </div>
-
-    <div class="results">
-      <div class="tip_amount_result">
-        <h2>
-          Tip Amount
-        / person
-        </h2>
-        <div class="tipPerPerson"></div>
+    <div class="container">
+      <div class="inputs">
+        <div class="bill">
+          <h2>Bill</h2>
+          <input type="text" placeholder="0" id="bill">
+        </div>
+  
+        <div class="tip-amounts">
+          <h2>Select Tip %</h2>
+        <div class="tip-inputs">
+          <button data-amount="5" class="set-tip">5%</button>
+        <button data-amount="10" class="set-tip">10%</button>
+        <button data-amount="15" class="set-tip">15%</button>
+        <button data-amount="25" class="set-tip">25%</button>
+        <button data-amount="50" class="set-tip">50%</button>
+        <input type="text" placeholder="Custom" id="custom-tip">
+        </div>
+        </div>
+      
+        <div class="people">
+          <h2>Number of People</h2>
+          <input type="text" name="" placeholder="0" id="numOfPeople">
+        </div>
       </div>
-
-      <div>
-      </div>
-      <div class="people_results">
-         <h2>
-          Total
+  
+      <div class="results">
+        <div class="tip_amount_result">
+          <h2>
+            Tip Amount
           / person
-         </h2>
-         <div class="totalAmountOutput"></div>
+          </h2>
+          <div class="tipPerPerson"></div>
+        </div>
+  
+        <div>
+        </div>
+        <div class="people_results">
+           <h2>
+            Total
+            / person
+           </h2>
+           <div class="totalAmountOutput"></div>
+        </div>
+  
+        <button id="resetBtn">Reset</button>
       </div>
 
-      <button id="resetBtn">Reset</button>
     </div>
     
   </main>
