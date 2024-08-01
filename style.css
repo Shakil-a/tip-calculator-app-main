@@ -18,7 +18,7 @@ body{
 
 .logo-container{
     background-color: var(--Light-grayish-cyan);
-    padding: 50px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -30,4 +30,93 @@ body{
 
 .container{
     padding: 15px 25px;
+}
+
+h2{
+    font-size: 1.1rem;
+    color: var(--Dark-grayish-cyan);
+}
+
+.tip-inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.set-tip{
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.4rem;
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    font-weight: 700;
+}
+
+#custom-tip{
+    border: none;
+    background-color: var(--Very-light-grayish-cyan);
+    border-radius: 5px;
+    text-align: end;
+}
+
+#custom-tip::placeholder{
+    color: var(--Very-dark-cyan);
+}
+
+#bill,
+#numOfPeople {
+    text-align: end;
+    width: 93%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+#bill{
+    background: url('./images/icon-dollar.svg') no-repeat;
+    background-color: var(--Very-light-grayish-cyan);
+}
+
+#numOfPeople {
+    background: url('./images/icon-person.svg') no-repeat;
+    background-color: var(--Very-light-grayish-cyan);
+}
+
+.results{
+    background-color: var(--Very-dark-cyan);
+    display: grid;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 2em;
+}
+
+.tip_amount_result,
+.people_results{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resetBtn{
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: var(--Strong-cyan);
+}
+
+.tipPerPerson,
+.totalAmountOutput {
+    font-size: 2rem;
+    color: var(--Strong-cyan);
+}
+
+.tipPerPerson::before,
+.totalAmountOutput::before{
+    content: "$";
+}
+
+.result-header{
+    color: var(--White);
 }
