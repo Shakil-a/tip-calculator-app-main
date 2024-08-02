@@ -120,3 +120,45 @@ h2{
 .result-header{
     color: var(--White);
 }
+
+@media screen and (min-width: 1000px) {
+    body {
+      background-color: var(--Light-grayish-cyan);
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 70%;
+        gap: 3em;
+        background-color: var(--White);
+        padding: 30px 35px;
+        border-radius: 25px;
+    }
+
+    .results{
+        margin-top: 0;
+        border-radius: 25px;
+    }
+
+    .tip-inputs{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    }
+
+    .inputs{
+        display: grid;
+        gap: 3em;
+    }
+
+    #resetBtn{
+        padding: 0;
+    }
+  }
