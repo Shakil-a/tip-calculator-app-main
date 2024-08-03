@@ -121,6 +121,23 @@ h2{
     color: var(--White);
 }
 
+#resetBtn:hover{
+    background-color: var(--Light-grayish-cyan);
+}
+
+.set-tip:hover{
+    background-color: var(--Light-grayish-cyan);
+}
+
+#bill:hover,
+#numOfPeople:hover,
+.set-tip:hover,
+#resetBtn:hover {
+  cursor: pointer;
+}
+
+
+
 @media screen and (min-width: 1000px) {
     body {
       background-color: var(--Light-grayish-cyan);
@@ -160,5 +177,6 @@ h2{
 
     #resetBtn{
         padding: 0;
-    }
+    } 
+    
   }
